@@ -1,27 +1,14 @@
 import React, { useState } from 'react'
-// we will use props destructure then we will use readMore const to
-// to add functionality
-const Tour = ({ id, image, info, name, price, removeTour }) => {
-	const [readMore, setReadMore] = useState(false)
-	return (
-		<article className='single-tour'>
-			<img src={image} alt={name} />
-			<footer>
-				<div className='tour-info'>
-					<h4>{name}</h4>
-					<h4 className='tour-price'>${price}</h4>
-				</div>
-				<p>
-					{readMore ? info : `${info.substring(0, 200)}...`}
-					<button onClick={() => setReadMore(!readMore)}>
-						{readMore ? 'show less' : '  read more'}
-					</button>
-				</p>
-				<button className='delete-btn' onClick={() => removeTour(id)}>
-					not interested
-				</button>
-			</footer>
-		</article>
-	)
+
+const Tour = ({ id, image, info, price, name }) => {
+  return (
+    <article>
+      <img src={image} alt={name} width='200' length='200' />
+      <div>
+        <h4>{name}</h4>
+        <p>{info}</p>
+      </div>
+    </article>
+  )
 }
 export default Tour
