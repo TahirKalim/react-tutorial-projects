@@ -7,22 +7,26 @@ import SingleCocktail from './pages/SingleCocktail'
 import Error from './pages/Error'
 // import components
 import Navbar from './components/Navbar'
+import CocktailList from './components/CocktailList'
 function App() {
   return (
     <div>
       <Router>
         <Navbar />
         <Switch>
-          <Route exact path="/" >
+          <Route exact path='/'>
             <Home />
           </Route>
-          <Route  path="/about" >
+          <Route path='/about'>
             <About />
           </Route>
-          <Route  path="/cocktail/:id">
+          <Route path='/cocktaillist'>
+            <CocktailList />
+          </Route>
+          <Route path='/cocktail/:id'>
             <SingleCocktail />
           </Route>
-          <Route  path="*">
+          <Route path='*'>
             <Error />
           </Route>
         </Switch>
