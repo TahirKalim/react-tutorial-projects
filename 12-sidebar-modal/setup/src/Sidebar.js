@@ -7,14 +7,14 @@ const Sidebar = () => {
   return (
     <aside className={`sidebar`}>
       <div className='sidebar-header'>
-        <img src={logo} className='logo' alt='coding addict' />
+        <img src={logo} className='logo' alt='coding' />
         <button className='close-btn'>
           <FaTimes />
         </button>
       </div>
       <ul className='links'>
         {links.map((link) => {
-          const {id, url, text, icon} = link
+          const { id, url, text, icon } = link
           return (
             <li key={id}>
               <a href={url}>
@@ -26,13 +26,11 @@ const Sidebar = () => {
         })}
       </ul>
       <ul className='social-icons'>
-        {social.map((link)=> {
-          const {id,url, icon}= link;
-          return(
+        {social.map((link) => {
+          const { id, url, icon } = link
+          return (
             <li key={id}>
-              <a href={url}>
-                {icon}
-              </a>
+              <a href={url}>{icon}</a>
             </li>
           )
         })}
