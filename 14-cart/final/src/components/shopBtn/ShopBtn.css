@@ -1,0 +1,10 @@
+.shopCta {
+  background: #fff;
+  border-color: #fff;
+  color: #222;
+  border: none;
+  padding: 5px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+.container {
+  width: 60vw;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 95vw;
+  }
+}
+
+.filler {
+  height: 20px;
+  width: 100%;
+  background: rgb(252, 251, 251);
+}
+
+.freeShipping {
+  background-color: rgb(240, 240, 240);
+  padding: 20px;
+  font-family: poppins;
+}
+
+.freeShipping p {
+  font-weight: bold;
+  margin: 0;
+}
+
+.freeShipping span {
+  font-size: 15px;
+}

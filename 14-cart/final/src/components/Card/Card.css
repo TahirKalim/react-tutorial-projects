@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cardWrapper {
+  position: relative;
+}
+
+.cardImage {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.cardWrapper .desc {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  left: 0;
+  color: white;
+}
+
+@media (min-width: 1262px) {
+  .cardWrapper .desc {
+    bottom: 200px;
+  }
+}
+@media (max-width: 465px) {
+  .cardWrapper .desc {
+    bottom: 10px;
+    font-size: 10px;
+  }
+}
+
+.cardWrapper .desc .title {
+  margin: 10px;
+}
+
+.cardWrapper .desc .subtitle {
+  margin: 10px;
+}
+
+.cardWrapper .desc .shopCta:hover {
+  background: rgba(240, 238, 238, 0.8);
+}
