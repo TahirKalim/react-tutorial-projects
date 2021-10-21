@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react'
 import { FaBars, FaTwitter } from 'react-icons/fa'
 import { links, social } from './data'
 import logo from './logo.svg'
-// important thing is tto note that first we hard coded the social media link and the nav bar then we removed and used map to iterate over.
+// important thing is to note that first we hard coded the social media link and the nav bar then we removed and used map to iterate over.
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
   return (
