@@ -5,15 +5,15 @@ const List = ({ items }) => {
   return (
     <div className='grocery-list'>
       {items.map((item) => {
-        const { id, title } = item
+        const { title, id } = item
         return (
           <article key={id} className='grocery-item'>
             <p className='title'>{title}</p>
             <div className='btn-container'>
-              <button className='edit-btn'>
+              <button type='button' className='edit-btn'>
                 <FaEdit />
               </button>
-              <button className='delete-btn'>
+              <button type='button' className='delete-btn'>
                 <FaTrash />
               </button>
             </div>
