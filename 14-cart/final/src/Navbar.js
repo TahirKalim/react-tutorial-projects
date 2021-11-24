@@ -19,6 +19,7 @@ const Nav = () => {
             <div className='amount-container'>
               <p className='total-amount'>{amount}</p>
             </div>
+            
           </div>
         </div>
         <ul>

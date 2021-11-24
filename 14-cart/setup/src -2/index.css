@@ -139,15 +139,15 @@ nav h3 {
   position: relative;
 }
 nav svg {
-  width: 0rem;
+  width: 2rem;
   fill: var(--clr-white);
 }
 .amount-container {
   position: absolute;
-  top: -0.45rem;
-  right: -28.55rem;
-  width: 1.2rem;
-  height: 1.2rem;
+  top: -0.85rem;
+  right: -0.85rem;
+  width: 1.75rem;
+  height: 1.75rem;
   border-radius: 50%;
   background: var(--clr-primary-light);
   display: flex;
@@ -159,67 +159,6 @@ nav svg {
   margin-bottom: 0;
   font-size: 1.25rem;
 }
-/*
-=============== 
-Navbar (tanveer)
-===============
-*/
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,400i,700');
-
-menu {
-  width: 100%;
-  background-color: rgb(240, 240, 240);
-  margin: 0 auto;
-  border-bottom: thin dotted lightgray;
-  padding: 5px;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  font-size: 1.1em;
-}
-menu nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-family: Inconsolata, sans-serif;
-  width: 95vw;
-  margin: 0 auto;
-  padding-right: 20px;
-}
-menu nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 14rem;
-}
-menu nav ul li a {
-  text-decoration: none;
-  position: relative;
-  color: inherit;
-  padding-bottom: 2px;
-}
-menu nav ul li a::after {
-  content: '';
-  width: 0%;
-  height: 1px;
-  background: black;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transform-origin: center;
-  transition: width 0.3s ease-in-out;
-}
-menu nav ul li a:hover::after {
-  width: 100%;
-}
-
-.link {
-  text-decoration: none;
-  color: black;
-}
-
 /*
 =============== 
 Cart
